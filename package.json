@@ -9,16 +9,16 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "conventional-changelog": "*",
-    "eclint": "*",
-    "eslint": "*",
-    "espower-loader": "*",
-    "fixpack": "*",
-    "globstar": "*",
-    "mocha": "*",
-    "npm-check-updates": "*",
-    "power-assert": "*",
-    "touch": "*"
+    "conventional-changelog": "^0.5.1",
+    "eclint": "^1.1.5",
+    "eslint": "^1.7.3",
+    "espower-loader": "^1.0.0",
+    "fixpack": "^2.2.0",
+    "globstar": "^1.0.0",
+    "mocha": "^2.3.3",
+    "npm-check-updates": "^2.3.3",
+    "power-assert": "^1.1.0",
+    "touch": "^1.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
