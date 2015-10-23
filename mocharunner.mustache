@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<title>Current page title</title>
+<link rel="stylesheet" href="/testem/mocha.css">
+<script src="/testem/mocha.js"></script>
+<script src="/testem.js"></script>
+<script>mocha.setup('bdd')</script>
+{{#serve_files}}<script src="{{{src}}}"{{#attrs}} {{&.}}{{/attrs}}></script>{{/serve_files}}
+{{#styles}}<link rel="stylesheet" href="{{.}}">{{/styles}}
+</head>
+<body>
+<div id="mocha"></div>
+<script>
+mocha.run()
+</script>
+</body>
+</html>
