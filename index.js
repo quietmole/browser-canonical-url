@@ -1,10 +1,17 @@
 'use strict';
-module.exports = function (str, opts) {
-  if (typeof str !== 'string') {
-    throw new TypeError('Expected a string');
+/**
+  * @license
+  * http://upa-pc.blogspot.jp/2015/03/javascript-canonical-url-get.html
+  * Copyright © 2012-2015 Dr.ウーパ
+  *
+  * @return {?string} canonical url.
+  */
+module.exports = function () {
+  var links = document.getElementsByTagName('link');
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].rel && links[i].rel.toLowerCase() === 'canonical') {
+      return links[i].href;
+    }
   }
-
-  opts = opts || {};
-
-  return str + ' & ' + (opts.postfix || 'rainbows');
+  return null;
 };
