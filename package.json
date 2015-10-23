@@ -1,6 +1,6 @@
 {
   "name": "browser-canonical-url",
-  "description": "My spectacular module",
+  "description": "Get canonical url for browser.",
   "version": "0.0.0",
   "author": {
     "name": "sanemat",
@@ -37,7 +37,7 @@
     ""
   ],
   "license": "MIT",
-  "repository": "sanemat/browser-canonical-url",
+  "repository": "quietmole/browser-canonical-url",
   "scripts": {
     "build:browser": "npm prune && npm dedupe && browserify --standalone browserCanonicalUrl ./index.js | derequire > build/browser-canonical-url.js",
     "build:test-bundled": "browserify -t espowerify test.js > test-bundled.js",
