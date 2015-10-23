@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Travis-CI Status][travis-image]][travis-url] [![Appveyor Status][appveyor-image]][appveyor-url] [![Daviddm Status][daviddm-image]][daviddm-url]
 
-> My spectacular module
+> Get canonical url for browser.
 
 
 ## Install
@@ -16,32 +16,20 @@ $ npm install --save browser-canonical-url
 
 ```js
 var browserCanonicalUrl = require('browser-canonical-url');
+// or
+<script src="build/browser-canonical-url.js"></script>
 
-browserCanonicalUrl('unicorns');
-//=> unicorns & rainbows
+browserCanonicalUrl();
+//=> http://example.com/canonical
 ```
 
 
 
 ## API
 
-### browserCanonicalUrl(input, [options])
+### browserCanonicalUrl() -> ?String
 
-#### input
-
-*Required*  
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`  
-Default: `false`
-
-Lorem ipsum.
+Canonical url or null.
 
 
 ## Changelog
@@ -54,11 +42,11 @@ Lorem ipsum.
 MIT © [sanemat](http://sane.jp)
 
 
-[travis-url]: https://travis-ci.org/sanemat/browser-canonical-url
-[travis-image]: https://img.shields.io/travis/sanemat/browser-canonical-url/master.svg?style=flat-square&label=build%20%28linux%29
+[travis-url]: https://travis-ci.org/quietmole/browser-canonical-url
+[travis-image]: https://img.shields.io/travis/quietmole/browser-canonical-url/master.svg?style=flat-square&label=build%20%28linux%29
 [appveyor-url]: https://ci.appveyor.com/project/sanemat/browser-canonical-url/branch/master
 [appveyor-image]: https://img.shields.io/appveyor/ci/sanemat/browser-canonical-url/master.svg?style=flat-square&label=build%20%28windows%29
 [npm-url]: https://npmjs.org/package/browser-canonical-url
 [npm-image]: https://img.shields.io/npm/v/browser-canonical-url.svg?style=flat-square
-[daviddm-url]: https://david-dm.org/sanemat/browser-canonical-url
-[daviddm-image]: https://img.shields.io/david/sanemat/browser-canonical-url.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/quietmole/browser-canonical-url
+[daviddm-image]: https://img.shields.io/david/quietmole/browser-canonical-url.svg?style=flat-square
