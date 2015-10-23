@@ -21,6 +21,8 @@ install:
 build: off
 
 # test
+before_test:
+- "npm run test -- --file testem.appveyor.js launchers"
 test_script:
 - npm run verify:appveyor
 
