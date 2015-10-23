@@ -27,14 +27,17 @@
     "touch": "^1.0.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "files": [
     "index.js",
     "build/browser-canonical-url.js"
   ],
   "keywords": [
-    ""
+    "bookmarklet",
+    "browser",
+    "canonical",
+    "url"
   ],
   "license": "MIT",
   "repository": "quietmole/browser-canonical-url",
