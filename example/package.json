@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "browser-canonical-url": "file:.."
+  }
+}

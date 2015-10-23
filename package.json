@@ -31,7 +31,7 @@
   },
   "files": [
     "index.js",
-    "build"
+    "build/browser-canonical-url.js"
   ],
   "keywords": [
     ""
